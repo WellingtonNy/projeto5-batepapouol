@@ -1,0 +1,144 @@
+*{box-sizing: border-box;}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container{
+    width: 100%;
+    min-width: 300px;
+    max-width: 375px;
+    height: 100vh;
+    min-height: 300px;
+    max-height: 667px;
+    margin:auto auto;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffff;
+    width: 100%;
+    height: 12%;
+    min-height: 60px;
+    padding-left: 6.1%;
+    padding-right: 6.2%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+} 
+
+.top .logo{
+max-width: 75px;
+max-height: 53px;
+width: auto;
+height: auto;
+}
+
+.top .menu{
+    width: auto;
+    height: auto;
+  max-height: 30.93px;
+  max-width: 42.18px;    
+}
+
+.mid{
+    background-color: #F3F3F3;
+    padding-top: 26px;
+    padding-bottom: 13px;
+    width: 100%;
+    height: 76%;
+    overflow-y: scroll;
+}
+
+li{
+    margin-bottom: 5px;
+}
+.mensagem{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    flex-wrap: wrap;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    padding-left: 9px;
+    padding-right: 9px;
+    min-height: 40px;
+
+    
+}
+
+.status{
+background-color:#DCDCDC;
+}
+.padrao{
+background: #FFFFFF;
+}
+.reservado{
+background-color: #FFDEDE;
+}
+.direcionada{
+  background-color:#FFFFFF;
+}
+
+
+.mensagem span{
+    
+   color: #AAAAAA;
+   padding-right: 5px;
+
+}
+.mensagem b{
+    
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+
+
+.bot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 17px;
+    padding-right: 27px;
+    background-color: white;
+    width: 100%;
+    height: 12%;
+    min-height: 60px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.bot input{
+    width: 80%;
+    height: 37.5%;
+    border: none;
+    font-family: 'Roboto';
+    font-weight: 500;
+    line-height: 21px;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.bot input::placeholder{
+color: #000000;
+font-family: 'Roboto';
+font-size: 18px;
+font-style: italic;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.bot textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.bot .send{
+    width: 26px;
+    height: 26px;
+}

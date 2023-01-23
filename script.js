@@ -31,15 +31,15 @@ resposta.catch(recarregar);
         for (let i = 0; i < mensagens.length; i++) {
             if(mensagens[i].type === 'status'){
 
-             tela.innerHTML+=`<li class="mensagem status"> <span>(${mensagens[i].time})</span><b>${mensagens[i].from}</b>  ${mensagens[i].text}</li>`;
+             tela.innerHTML+=`<li data-test="message" class="mensagem status"> <span>(${mensagens[i].time})</span><b>${mensagens[i].from}</b>  ${mensagens[i].text}</li>`;
              
             }else if(mensagens[i].type === "message"){
 
-                tela.innerHTML+=`<li class="mensagem padrao"> <span>(${mensagens[i].time})</span><b>${mensagens[i].from}</b> para <b>${mensagens[i].to}</b>:  ${mensagens[i].text}</li>`;
+                tela.innerHTML+=`<li data-test="message" class="mensagem padrao"> <span>(${mensagens[i].time})</span><b>${mensagens[i].from}</b> para <b>${mensagens[i].to}</b>:  ${mensagens[i].text}</li>`;
 
             }else if(mensagens[i].type==="private_message" && mensagens[i].to ===nomeDeUsuario){
 
-                tela.innerHTML+=`<li class="mensagem reservado"> <span>(${mensagens[i].time})</span><b>${mensagens[i].from}</b> reservadamente para <b>${mensagens[i].to}</b>:  ${mensagens[i].text}</li>`;
+                tela.innerHTML+=`<li data-test="message" class="mensagem reservado"> <span>(${mensagens[i].time})</span><b>${mensagens[i].from}</b> reservadamente para <b>${mensagens[i].to}</b>:  ${mensagens[i].text}</li>`;
 
             }
         }

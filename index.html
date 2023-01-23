@@ -19,24 +19,15 @@
 
        <div class="mid">
         <ul class="lista">
-            <li class="mensagem status"> <span>(09:21:45)</span><b>João</b>     entra na sala...</li>
-            <li class="mensagem direcionada"><span>(09:22:38)</span> <b> Maria </b>  para  <b>João</b> : Oi João :)</li>
-            <li class="mensagem padrao"> <span>(09:22:28)</span> <b> João </b> para <b>Todos</b>:  Bom dia </li>
-            <li class="mensagem reservado"><span>(09:22:48)</span> <b>João </b>  reservadamente para <b>Maria</b>: Oi gatinha quer tc? </li>
-            <li class="mensagem status"> <span>(09:21:45)</span> <b>João</b> entra na sala...</li>
-            <li class="mensagem status"> <span>(09:21:45)</span><b>João</b>     entra na sala...</li>
-            <li class="mensagem direcionada"><span>(09:22:38)</span> <b> Maria </b>  para  <b>João</b> : Oi João :)</li>
-            <li class="mensagem padrao"> <span>(09:22:28)</span> <b> João </b> para <b>Todos</b>:  Bom dia </li>
-            <li class="mensagem reservado"><span>(09:22:48)</span> <b>João </b>  reservadamente para <b>Maria</b>: Oi gatinha quer tc? </li>
-            <li class="mensagem status"> <span>(09:21:45)</span> <b>João</b> entra na sala...</li>
+            
         </ul>
        </div>
 
 
 
        <div class="bot">
-        <input type="text" placeholder="Escreva aqui...">
-        <ion-icon class="send" onclick="enviar()" name="paper-plane-outline"></ion-icon>
+        <input data-test="input-message" type="text" placeholder="Escreva aqui...">
+        <ion-icon data-test="send-message" class="send" onclick="enviar()" name="paper-plane-outline"></ion-icon>
        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

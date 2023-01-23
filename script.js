@@ -37,7 +37,7 @@ resposta.catch(recarregar);
 
                 tela.innerHTML+=`<li data-test="message" class="mensagem padrao"> <span>(${mensagens[i].time})</span><b>${mensagens[i].from}</b> para <b>${mensagens[i].to}</b>:  ${mensagens[i].text}</li>`;
 
-            }else if(mensagens[i].type==="private_message" && mensagens[i].to ===nomeDeUsuario){
+            }else if(mensagens[i].type === "private_message" && (mensagens[i].to ===nomeDeUsuario || mensagens[i].from === nomeDeUsuario)){
 
                 tela.innerHTML+=`<li data-test="message" class="mensagem reservado"> <span>(${mensagens[i].time})</span><b>${mensagens[i].from}</b> reservadamente para <b>${mensagens[i].to}</b>:  ${mensagens[i].text}</li>`;
 

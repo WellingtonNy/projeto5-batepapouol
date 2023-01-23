@@ -6,8 +6,8 @@ const tela = document.querySelector('.lista');
 
 let lastMsg;
 
-const intervalo5s = 5000
-const intervalo3s = 3000
+const intervalo5s = 5000;
+const intervalo3s = 3000;
 
 const resposta = axios.post('https://mock-api.driven.com.br/api/v6/uol/participants', nome);
 

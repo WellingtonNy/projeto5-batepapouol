@@ -11,7 +11,9 @@ resposta.then(iniciar)
 resposta.catch(recarregar)
 
  function iniciar(acerto) {
+   carregarMensagens()
    setInterval(carregarMensagens,3000)
+   setInterval(statusAtivo, 5000)
 
     } 
 
@@ -36,14 +38,12 @@ resposta.catch(recarregar)
             }
             
         }
-    
+       tela.lastElementChild.scrollIntoView();
     }
 
 function recarregar(erro) {
     window.location.reload(true)
 }
-
-setInterval(statusAtivo, 5000)
 
 function statusAtivo(){
     let promessa = axios.post('https://mock-api.driven.com.br/api/v6/uol/status',nome)

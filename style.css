@@ -55,7 +55,8 @@ li{
     padding-top: 12px;
     padding-bottom: 12px;
     flex-wrap: wrap;
-    font-family: Roboto;
+    word-break: break-all;
+    font-family: 'Roboto';
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
@@ -85,7 +86,7 @@ background-color: #FFDEDE;
 }
 .mensagem b{
     
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
